@@ -1,0 +1,11 @@
+<div class="container">
+    <div id="selectedYear" (click)="goToYearList()">{{selectedYear}}</div>
+</div>
+<div class="container">
+    
+    <div class="block" *ngFor="let month of months" (click)="onSelect(month.id)">
+        {{month.name}}
+    </div>
+</div>
+
+

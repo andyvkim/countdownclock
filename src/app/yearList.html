@@ -1,0 +1,9 @@
+<div class="container">
+    <div id="year">Year</div>
+</div>
+
+<div class="container">
+    <div class="block" *ngFor="let year of yearList" (click)="onSelect(year)">
+        {{year}}
+    </div>
+</div>

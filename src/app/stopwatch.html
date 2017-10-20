@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row" >
+        <div class="col-md-8 col-md-offset-2" id="stopwatch">
+            <div >
+                <div class="marginClass">
+                       <span *ngIf="hour>0" class="large">{{hour}}</span>  
+                        <span  *ngIf="hour>0" class="medium">h</span>
+                </div>
+                
+               <div class="marginClass">
+                     <span *ngIf="minute>0" class="large">  {{minute}}</span >
+                     <span *ngIf="minute>0" class="medium">m</span>
+               </div>
+               
+               <div class="marginClass">
+                    <span class="large">   {{second}}</span> 
+                    <span class="medium">s</span> 
+               </div> 
+                
+                <div class="marginClass">
+                    <span class="small"  *ngIf="millisecond<10">0</span>
+                    <span class="small">   {{millisecond}}</span>
+                </div>
+                
+                
+            </div>
+ 
+            <div class="controlButtons">
+                 <button class="btn btn-primary" *ngIf="!start" (click)="onStart()"><strong>Start</strong></button>
+                <button class="btn btn-primary" *ngIf="start" (click)=" pause ? onResume():onPause()"><strong>{{controlBtnText}}</strong></button>
+                <button class="btn btn-default" (click)="reset()"><strong>Reset</strong></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+

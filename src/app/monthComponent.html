@@ -1,0 +1,52 @@
+
+<div class="container">
+        <div class="row"  id="currentMonthInfo">
+                <div class="col-md-12">
+                        <button  class="btn btn-default" (click)="previousMonth()"> <span class="glyphicon glyphicon-chevron-left"></span></button>
+                        <span *ngIf='currentMonth' (click)="onClickMonth()">{{currentMonth}}</span>,
+                        <span (click)="onClickYear()">{{currentYear}}</span>
+                        <button  id="nextBtn" class="btn btn-default" (click)="nextMonth()"> <span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+
+        </div>
+         
+</div>
+<div class="container">
+        <div class="day">{{daysName[0]}}</div>
+        <div class="day">{{daysName[1]}}</div>
+        <div class="day">{{daysName[2]}}</div>
+        <div class="day">{{daysName[3]}}</div>
+        <div class="day">{{daysName[4]}}</div>
+        <div class="day">{{daysName[5]}}</div>
+        <div class="day">{{daysName[6]}}</div>
+</div>
+
+
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week1" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week2" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week3" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week4" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week5" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+<div class="container" *ngIf="days">
+        <div  *ngFor="let day of week6" class="block" [class.isActive]="day.isActive">{{day.day}}</div>
+       
+</div>
+
+
+
+

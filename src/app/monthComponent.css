@@ -1,0 +1,64 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 1080px;
+	margin-left: 200px;
+  font-family: 'Istok Web', sans-serif;
+
+	
+}
+
+#nextBtn{
+   float: right;
+    
+}
+#currentMonthInfo{
+    font-size: 30px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    padding-top:10px; 
+    /*background-color: rgb(0,102,153);*/
+    border:1px solid rgb(200,200,200);
+    color:black;
+    border-radius: 5px;
+    width:400px;
+
+  
+}
+#nextBtn{
+   float: right;
+    
+}
+.day{
+    height: 50px;
+    flex-basis: 120px;
+    margin: 1px;
+    padding-top:15px; 
+    /*background-color: rgb(0, 38, 77);*/
+    border:1px solid rgb(200,200,200);
+    color: rgb(153, 0, 51);
+    text-align: center;
+   
+    font-size: 20px;
+}
+.block{
+	height: 60px;
+	flex-basis: 120px;
+	background-color:rgb(217,217,217);
+    color: rgb(180,180,180);
+    margin: 1px;
+    text-align: center;
+    font-size: 25px;
+    position: relative; 
+
+}
+.dayClass{
+    padding: 10px;
+    
+}
+
+
+.isActive{
+    background-color: whitesmoke;
+    color: rgb(26,26,26)
+}

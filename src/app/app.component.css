@@ -1,0 +1,65 @@
+
+body{
+  
+    min-height: 600px;
+    margin: 0;
+    background-color: red;
+}
+#note{
+    position: fixed;
+    right:5px;
+    bottom: 20px;
+   
+    color: gray;
+
+}
+
+
+nav{
+    /*background-color: rgb(0, 102, 153);*/
+    background-color: black;
+    padding-top:25px; 
+    margin-bottom: 10px;
+    border-bottom: 5px solid  rgb(255, 128, 0);
+ 
+    
+    
+}
+ a{
+    font-size: 35px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 60px;
+   font-family: 'Kanit', sans-serif;
+  
+   margin-right: 10px;
+ }  
+
+
+
+.active{
+  background-color:white;
+  /*color: rgb(0, 102, 153);*/
+  color: black;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right:10px;
+  /*border-top: 2px solid  rgb(255, 77, 77);
+  border-left: 2px solid  rgb(255, 77, 77);
+  border-right: 2px solid  rgb(255, 77, 77);*/
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  
+  
+
+}
+
+
+/*font-family: 'Play', sans-serif;
+font-family: 'Maven Pro', sans-serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Crete Round', serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Istok Web', sans-serif;*/
